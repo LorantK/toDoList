@@ -42,4 +42,8 @@ public class Task {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    public String toString(){
+        return "{\"description\": \""+getDescription()+"\"}";
+    }
 }
