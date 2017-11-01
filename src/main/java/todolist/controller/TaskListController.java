@@ -1,4 +1,4 @@
-package todolist;
+package todolist.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by Kevin on 01/11/2017.
  */
 
-@RestController
-public class ToDoListController {
+@RestController()
+public class TaskListController {
 
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String index() {
         return "Coucou";
     }
